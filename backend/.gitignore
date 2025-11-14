@@ -6,3 +6,4 @@ logs/
 *.iws
 *.iml
 *.i
+*.log
