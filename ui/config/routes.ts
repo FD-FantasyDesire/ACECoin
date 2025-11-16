@@ -18,22 +18,6 @@ export default [
     component: './home/HomePage',
   },
   {
-    name: '演示',
-    path: '/demo',
-    routes: [
-      {
-        name: '演示页面',
-        path: '/demo/page1',
-        component: './Demo/Page1',
-      },
-      {
-        name: '演示页面2',
-        path: '/demo/page2',
-        component: './Demo/Page2',
-      },
-    ]
-  },
-  {
     path: '*',
     layout: false,
     component: './404',
@@ -77,22 +61,6 @@ export default [
         name: '分配用户',
         path: '/basic-info/system/role-auth/user/:id',
         component: './System/Role/authUser',
-      },
-    ]
-  },
-  {
-    name: 'wms',
-    path: '/wms',
-    routes: [
-      {
-        name: '盘库单',
-        path: '/wms/order/check-edit',
-        component: './Wms/Order/Check/edit',
-      },
-      {
-        name: '案件基础数据',
-        path: '/wms/basic/case-info',
-        component: './Wms/CaseInfo',
       },
     ]
   },

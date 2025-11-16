@@ -1,5 +1,5 @@
 export default {
-  'pages.layouts.userLayout.title': '软3区1后端开发练习致力于让软件开发更快捷、更智能、更安全',
+  'pages.layouts.userLayout.title': 'ACECoin数字货币投研平台致力于让软件开发更快捷、更智能、更安全',
   'pages.login.accountLogin.tab': '账户密码登录',
   'pages.login.accountLogin.errorMessage': '错误的用户名和密码(admin/admin123)',
   'pages.login.failure': '登录失败，请重试！',

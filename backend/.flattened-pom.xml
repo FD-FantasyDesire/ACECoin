@@ -3,16 +3,16 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.ruoyi</groupId>
-  <artifactId>ruoyi-wms</artifactId>
+    <artifactId>ruoyi-acecoin</artifactId>
   <version>5.2.0</version>
   <packaging>pom</packaging>
   <name>ruoyi-react</name>
   <description>ruoyi-react后台管理系统</description>
   <url>https://github.com/jettlu/RuoyiWithReact.git</url>
   <modules>
-    <module>ruoyi-admin-wms</module>
+      <module>ruoyi-admin-acecoin</module>
     <module>ruoyi-common</module>
-    <module>ruoyi-modules</module>
+      <module>ruoyi-system</module>
   </modules>
   <properties>
     <spring-boot-admin.version>3.2.3</spring-boot-admin.version>

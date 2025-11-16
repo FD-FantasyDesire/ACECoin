@@ -1,6 +1,6 @@
-import { PageContainer } from '@ant-design/pro-components';
-import { useModel } from '@umijs/max';
-import { Card, theme } from 'antd';
+import {PageContainer} from '@ant-design/pro-components';
+import {useModel} from '@umijs/max';
+import {Card, theme} from 'antd';
 import React from 'react';
 
 /**
@@ -114,7 +114,7 @@ const Welcome: React.FC = () => {
               color: token.colorTextHeading,
             }}
           >
-            软3区1后端开发练习
+            ACECoin数字货币投研平台
           </div>
           <p
             style={{
@@ -126,7 +126,7 @@ const Welcome: React.FC = () => {
               width: '65%',
             }}
           >
-           软3区1后端开发练习
+            ACECoin数字货币投研平台
           </p>
           <div
             style={{
@@ -143,15 +143,15 @@ const Welcome: React.FC = () => {
             />
             <InfoCard
               index={2}
-              title="了解软3区1后端开发练习"
+              title="了解ACECoin数字货币投研平台"
               href="https://weilai.design"
-              desc="软3区1后端开发练习致力于让软件开发更快捷更安全更智能。"
+              desc="ACECoin数字货币投研平台致力于让软件开发更快捷更安全更智能。"
             />
             <InfoCard
               index={3}
-              title="了解软3区1后端开发练习"
+              title="了解ACECoin数字货币投研平台"
               href="https://weilai.com"
-              desc="软3区1后端开发练习致力于让软件开发更智能，更安全，更便捷。"
+              desc="ACECoin数字货币投研平台致力于让软件开发更智能，更安全，更便捷。"
             />
           </div>
         </div>

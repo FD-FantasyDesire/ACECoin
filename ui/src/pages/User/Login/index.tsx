@@ -1,6 +1,6 @@
 import Footer from '@/components/Footer';
-import { getCaptchaImg, login } from '@/services/system/auth';
-import { getFakeCaptcha } from '@/services/ant-design-pro/login';
+import {getCaptchaImg, login} from '@/services/system/auth';
+import {getFakeCaptcha} from '@/services/ant-design-pro/login';
 import {
   AlipayCircleOutlined,
   LockOutlined,
@@ -9,19 +9,14 @@ import {
   UserOutlined,
   WeiboCircleOutlined,
 } from '@ant-design/icons';
-import {
-  LoginForm,
-  ProFormCaptcha,
-  ProFormCheckbox,
-  ProFormText,
-} from '@ant-design/pro-components';
-import { useEmotionCss } from '@ant-design/use-emotion-css';
-import { FormattedMessage, history, SelectLang, useIntl, useModel, Helmet } from '@umijs/max';
-import { Alert, Col, message, Row, Tabs, Image } from 'antd';
+import {LoginForm, ProFormCaptcha, ProFormCheckbox, ProFormText,} from '@ant-design/pro-components';
+import {useEmotionCss} from '@ant-design/use-emotion-css';
+import {FormattedMessage, Helmet, history, SelectLang, useIntl, useModel} from '@umijs/max';
+import {Alert, Col, Image, message, Row, Tabs} from 'antd';
 import Settings from '../../../../config/defaultSettings';
-import React, { useEffect, useState } from 'react';
-import { flushSync } from 'react-dom';
-import { clearSessionToken, setSessionToken } from '@/access';
+import React, {useEffect, useState} from 'react';
+import {flushSync} from 'react-dom';
+import {clearSessionToken, setSessionToken} from '@/access';
 
 const ActionIcons = () => {
   const langClassName = useEmotionCss(({ token }) => {
@@ -194,7 +189,7 @@ const Login: React.FC = () => {
             maxWidth: '75vw',
           }}
           logo={<img alt="logo" src="/logo.svg" />}
-          title="软3区1后端开发练习"
+          title="ACECoin数字货币投研平台"
           subTitle={intl.formatMessage({ id: 'pages.layouts.userLayout.title' })}
           initialValues={{
             autoLogin: true,

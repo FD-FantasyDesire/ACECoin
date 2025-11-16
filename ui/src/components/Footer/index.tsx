@@ -1,5 +1,5 @@
-import { GithubOutlined } from '@ant-design/icons';
-import { DefaultFooter } from '@ant-design/pro-components';
+import {GithubOutlined} from '@ant-design/icons';
+import {DefaultFooter} from '@ant-design/pro-components';
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
       links={[
         {
           key: 'weilai',
-          title: '软3区1后端开发练习',
+          title: 'ACECoin数字货币投研平台',
           href: 'https://weilai.com',
           blankTarget: true,
         },
@@ -23,7 +23,7 @@ const Footer: React.FC = () => {
         },
         {
           key: 'smart storage',
-          title: '软3区1后端开发练习',
+          title: 'ACECoin数字货币投研平台',
           href: 'https://weilai.com',
           blankTarget: true,
         },

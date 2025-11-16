@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.ruoyi</groupId>
-    <artifactId>ruoyi-wms</artifactId>
+    <artifactId>ruoyi-acecoin</artifactId>
     <version>${revision}</version>
 
     <name>ruoyi-react</name>
@@ -323,9 +323,9 @@
     </dependencyManagement>
 
     <modules>
-        <module>ruoyi-admin-wms</module>
+        <module>ruoyi-admin-acecoin</module>
         <module>ruoyi-common</module>
-        <module>ruoyi-modules</module>
+        <module>ruoyi-system</module>
     </modules>
     <packaging>pom</packaging>
 
