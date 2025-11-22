@@ -17,3 +17,4 @@ yarn-error.log
 build
 
 pnpm-lock.yaml
+package-lock.json
