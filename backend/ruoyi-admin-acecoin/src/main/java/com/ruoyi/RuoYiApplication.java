@@ -20,6 +20,5 @@ public class RuoYiApplication {
         application.run(args);
         System.out.println("====ruoyi-fast-service启动成功=====");
     }
-
 }
 
