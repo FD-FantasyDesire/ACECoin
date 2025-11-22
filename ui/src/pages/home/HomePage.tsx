@@ -5,11 +5,20 @@ import {
 import { 
   FileSearchOutlined, MessageOutlined, PieChartOutlined, UserOutlined 
 } from "@ant-design/icons";
-import { history } from '@umijs/max'; // 导入 Umi.js 的 history
+import { history } from '@umijs/max';
 
 const { Header, Content } = Layout;
 
-const HomePage = () => {
+// 定义快速入口项的类型
+interface QuickEntryItem {
+  title: string;
+  icon: React.ReactElement;
+  color: string;
+  desc: string;
+  path: string;
+}
+
+const HomePage: React.FC = () => {
 
   const menu = (
     <Menu>
@@ -20,54 +29,33 @@ const HomePage = () => {
   );
 
   // 处理快速入口点击事件
-  const handleQuickEntryClick = (entryType, path) => {
-    switch(entryType) {
-      case 'message':
-        // 跳转到消息列表页面 - 使用若依路由
-        console.log("跳转到消息列表");
-        history.push(path);
-        break;
-      case 'portfolio':
-        // 跳转到持仓数据页面
-        console.log("跳转到持仓数据");
-        // 这里可以添加其他页面的跳转逻辑
-        break;
-      case 'advice':
-        // 跳转到建议报告页面
-        console.log("跳转到建议报告");
-        // 这里可以添加其他页面的跳转逻辑
-        break;
-      default:
-        break;
-    }
+  const handleQuickEntryClick = (path: string): void => {
+    history.push(path);
   };
 
   // 快速入口配置数据
-  const quickEntries = [
+  const quickEntries: QuickEntryItem[] = [
     {
       title: "消息列表",
-      icon: <MessageOutlined/>,
+      icon: <MessageOutlined />,
       color: "#1890ff",
       desc: "查看每日采集的市场消息",
-      type: 'message',
-      path: '/account/settings' // 对应若依路由配置的 path
+      path: '/tool/gen/import'
     },
     {
       title: "持仓数据",
-      icon: <PieChartOutlined/>,
+      icon: <PieChartOutlined />,
       color: "#52c41a",
       desc: "查看当前资产占比与历史变化",
-      type: 'portfolio',
-      path: '/portfolio-data'
+      path: '/basic-info'
     },
     {
       title: "建议报告",
-      icon: <FileSearchOutlined/>,
+      icon: <FileSearchOutlined />,
       color: "#faad14",
       desc: "查看AI生成的持仓调整建议",
-      type: 'advice',
-      path: '/advice-report'
-    },
+      path: '/tool'
+    }
   ];
 
   return (
@@ -132,7 +120,7 @@ const HomePage = () => {
 
         {/* 快速入口区 */}
         <Row gutter={16} style={{ marginTop: "15px" }}>
-          {quickEntries.map((item, index) => (
+          {quickEntries.map((item: QuickEntryItem, index: number) => (
             <Col span={6} key={index}>
               <Card
                 hoverable
@@ -145,7 +133,7 @@ const HomePage = () => {
                 actions={[
                   <Button 
                     type="link" 
-                    onClick={() => handleQuickEntryClick(item.type, item.path)}
+                    onClick={() => handleQuickEntryClick(item.path)}
                   >
                     进入
                   </Button>
@@ -157,7 +145,7 @@ const HomePage = () => {
                     width: 50,
                     height: 50,
                     borderRadius: "50%",
-                    backgroundColor: item.color + "20",
+                    backgroundColor: `${item.color}20`,
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
