@@ -50,7 +50,7 @@ const HomePage = () => {
       color: "#1890ff",
       desc: "查看每日采集的市场消息",
       type: 'message',
-      path: '/account/settings' // 对应若依路由配置的 path
+      path: '/messages' // 对应消息列表页面路由
     },
     {
       title: "持仓数据",

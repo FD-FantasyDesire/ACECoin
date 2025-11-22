@@ -18,6 +18,11 @@ export default [
     component: './home/HomePage',
   },
   {
+    path: '/messages',
+    name: '消息列表',
+    component: './messages/MessagesList',
+  },
+  {
     path: '*',
     layout: false,
     component: './404',
